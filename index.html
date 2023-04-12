@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="container">
+	<h1>Pembuatan aplikasi percabangan (if) dan looping (for, while, do while)</h1>
+	<h4>Nama   : Irvan al rasyid</h4>
+	<h4>Npm    : 10822130</h4>
+	<h4>Kelas  : LJT-22/204</h4>
+	<h4>Matkul : pemrograman Berorientasi Object /Java</h4>
+	<h3>Program</h3>
+	<textarea>
+		package looping;
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+
+        //scanner dan variabel hasil untuk pilihan ke 3
+        Scanner hasil = new Scanner(System.in);
+        String ulang;
+
+        do {
+            System.out.println("================================");
+            System.out.println("Pilih salah satu nomor untuk melihat hasilnya \n" + 
+                                 "1. Segitiga Siku siku \n" +
+                                 "2. Segitiga Sama kaki \n" +
+                                 "3. Segitiga Terbalik");
+
+            int pilihan;
+            System.out.print("Masukan pilihan anda : ");
+            pilihan = hasil.nextInt();
+
+            //scanner dan variabel untuk pilihan ke 2
+            Scanner hasil2 = new Scanner(System.in);
+            int pilihan2;
+
+            if (pilihan == 1) {
+                System.out.println("====================================\n" + 
+                                   "ini adalah hasi segitiga siku siku\n" + 
+                                   "====================================\n" + 
+                                   "Silahkan pilih metode perulangan : \n"+ 
+                                   "1. For\n"+
+                                   "2. While\n"+
+                                   "3. Do while");
+
+                    System.out.print("Masukan pilhan anda: ");
+                    pilihan2 = hasil2.nextInt();
+
+                    //scanner dan variabel untuk pilihan ke 3
+                    Scanner hasil3 = new Scanner(System.in);
+                    int tinggi;
+
+                    if( pilihan2 == 1 ) {
+                        System.out.println("====================================\n" + 
+                        "Anda memilih perulangan for segitiga siku siku : \n" + 
+                        "====================================\n");
+
+                        System.out.println("for(kondisi) {aksi}\n" + 
+                        "====================================\n" + 
+                        "KARAKTERISTIK for :\n" + 
+                        "1. for bisa di gunakan bercabang \n" + 
+                        "2. for bersifat case sensitive artinya java hanya menganggap for dengan huruf kecil \n" + 
+                        "3. jika kondisi tidak memenuhi syarat program akan berhenti");
+
+                        System.out.print("Masukkan tinggi segitiga: ");
+                        tinggi = hasil3.nextInt();
+                        for (int i = 0; i < tinggi; i++) {
+                            for (int j = 0; j <= i; j++) {
+                                System.out.print("* ");
+                            }
+                            System.out.println();
+                        }
+                    }else if( pilihan2 == 2 ) {
+                        System.out.println("====================================\n" + 
+                        "Anda memilih perulangan for segitiga siku siku : \n" + 
+                        "====================================\n");
+                        System.out.println("while(kondisi) {aksi}\n" + 
+                        "====================================\n" +
+                        "KARAKTERISTIK while :\n" + 
+                        "1. while bisa di gunakan bercabang \n" + 
+                        "2. while bersifat case sensitive artinya java hanya menganggap for dengan huruf kecil \n" + 
+                        "3. jika kondisi tidak memenuhi syarat program akan berhenti");
+
+                        System.out.print("Masukkan tinggi segitiga: ");
+                        tinggi = hasil3.nextInt();
+                        for (int i = 0; i < tinggi; i++) {
+                            for (int j = 0; j <= i; j++) {
+                                System.out.print("* ");
+                            }
+                            System.out.println();
+                        }
+                    }else if( pilihan2 == 3 ) {
+                        System.out.println("====================================\n" + 
+                        "Anda memilih perulangan do while segitiga siku siku : \n" + 
+                        "====================================\n");
+                        System.out.println("do{aksi} while(kondisi)\n" + 
+                        "====================================\n" +
+                        "KARAKTERISTIK do while :\n" + 
+                        "1. do while bisa di gunakan bercabang \n" + 
+                        "2. do while bersifat case sensitive artinya java hanya menganggap for dengan huruf kecil \n" + 
+                        "3. jika konndisi tidak memenuhi syarat maka program akan berhenti \n" + 
+                        "4. aksi akan di jalankan terlebih dahulu baru kondisinya di cek");
+
+                        System.out.print("Masukkan tinggi segitiga: ");
+                        tinggi = hasil3.nextInt();
+
+                        int i = 1;
+                        do {
+                        int j = 1;
+                        do {
+                            System.out.print("* ");
+                            j++;
+                        } while (j <= i);
+
+                        System.out.println();
+                        i++;
+                         } while (i <= tinggi);
+                    }else{
+                        System.out.println("Maaf Anda salah memilih program");
+                    }
+
+            } else if (pilihan == 2) {
+                System.out.println("====================================\n" + 
+                                   "ini adalah hasi segitiga Sama kaki\n" + 
+                                   "====================================\n" + 
+                                   "Silahkan pilih metode perulangan : \n"+ 
+                                   "1. For\n"+
+                                   "2. While\n"+
+                                   "3. Do while");
+
+                System.out.print("Masukan pilhan anda: ");
+                pilihan2 = hasil2.nextInt();
+               
+                //scanner dan variabel untuk pilihan ke 3
+                Scanner hasil3 = new Scanner(System.in);
+                int tinggi;
+
+                if( pilihan2 == 1 ) {
+                    System.out.println("====================================\n" + 
+                    "Anda memilih perulangan for segitiga sama kaki : \n" + 
+                    "====================================\n");
+
+                    System.out.println("for(kondisi) {aksi}\n" + 
+                    "====================================\n" + 
+                    "KARAKTERISTIK for :\n" + 
+                    "1. for bisa di gunakan bercabang \n" + 
+                    "2. for bersifat case sensitive artinya java hanya menganggap for dengan huruf kecil \n" + 
+                    "3. jika kondisi tidak memenuhi syarat program akan berhenti");
+
+                    System.out.print("Masukkan tinggi segitiga: ");
+                    tinggi = hasil3.nextInt();
+                    for (int i = 0; i < tinggi; i++) {
+                        for (int j = 0; j < tinggi - i - 1; j++) {
+                            System.out.print(" ");
+                        }
+                        for (int k = 0; k < 2 * i + 1; k++) {
+                            System.out.print("*");
+                        }
+                        System.out.println();
+                    }
+                }else if( pilihan2 == 2 ) {
+                    System.out.println("====================================\n" + 
+                    "Anda memilih perulangan for segitiga sama kaki : \n" + 
+                    "====================================\n");
+                    System.out.println("while(kondisi) {aksi}\n" + 
+                    "====================================\n" +
+                    "KARAKTERISTIK while :\n" + 
+                    "1. while bisa di gunakan bercabang \n" + 
+                    "2. while bersifat case sensitive artinya java hanya menganggap for dengan huruf kecil \n" + 
+                    "3. jika kondisi tidak memenuhi syarat program akan berhenti");
+
+                    System.out.print("Masukkan tinggi segitiga: ");
+                    tinggi = hasil3.nextInt();
+                    int i = 1;
+
+                    while (i <= tinggi) {
+                        int j = i;
+                        while (j < tinggi) {
+                            System.out.print(" ");
+                            j++;
+                        }
+                        int k = 0;
+                        while (k != 2 * i - 1) {
+                            System.out.print("*");
+                            k++;
+                        }
+                        System.out.println();
+                        i++;
+                    }
+
+                }else if( pilihan2 == 3 ) {
+                    System.out.println("====================================\n" + 
+                    "Anda memilih perulangan do while segitiga sama kaki : \n" + 
+                    "====================================\n");
+                    System.out.println("do{aksi} while(kondisi)\n" + 
+                    "====================================\n" +
+                    "KARAKTERISTIK do while :\n" + 
+                    "1. do while bisa di gunakan bercabang \n" + 
+                    "2. do while bersifat case sensitive artinya java hanya menganggap for dengan huruf kecil \n" + 
+                    "3. jika konndisi tidak memenuhi syarat maka program akan berhenti \n" + 
+                    "4. aksi akan di jalankan terlebih dahulu baru kondisinya di cek");
+
+                    System.out.print("Masukkan tinggi segitiga: ");
+                    tinggi = hasil3.nextInt();
+
+                    int i = 1;
+
+                    do {
+                    int j = i;
+                    while (j < tinggi) {
+                    System.out.print(" ");
+                    j++;
+                    }
+                    int k = 0;
+                    while (k != 2 * i - 1) {
+                    System.out.print("*");
+                    k++;
+                    }
+                    System.out.println();
+                    i++;
+                    } while (i <= tinggi);
+
+                }else{
+                    System.out.println("Maaf Anda salah memilih program");
+                }
+
+                
+            } else if (pilihan == 3) {
+                System.out.println("====================================\n" + 
+                                   "ini adalah hasi segitiga Terbalik\n" + 
+                                   "====================================\n" + 
+                                   "Silahkan pilih metode perulangan : \n"+ 
+                                   "1. For\n"+
+                                   "2. While\n"+
+                                   "3. Do while");
+
+                System.out.print("Masukan pilhan anda: ");
+                pilihan2 = hasil2.nextInt();
+               
+                //scanner dan variabel untuk pilihan ke 3
+                Scanner hasil3 = new Scanner(System.in);
+                int tinggi;
+
+                if( pilihan2 == 1 ) {
+                    System.out.println("====================================\n" + 
+                    "Anda memilih perulangan for segitiga terbalik : \n" + 
+                    "====================================\n");
+
+                    System.out.println("for(kondisi) {aksi}\n" + 
+                    "====================================\n" + 
+                    "KARAKTERISTIK for :\n" + 
+                    "1. for bisa di gunakan bercabang \n" + 
+                    "2. for bersifat case sensitive artinya java hanya menganggap for dengan huruf kecil \n" + 
+                    "3. jika kondisi tidak memenuhi syarat program akan berhenti");
+
+                    System.out.print("Masukkan tinggi segitiga: ");
+                    tinggi = hasil3.nextInt();
+
+                    for (int i = tinggi; i >= 1; i--) {
+                        for (int j = 1; j <= tinggi - i; j++) {
+                            System.out.print(" ");
+                        }
+                        for (int k = 1; k <= 2 * i - 1; k++) {
+                            System.out.print("*");
+                        }
+                        System.out.println();
+                    }
+                }else if( pilihan2 == 2 ) {
+                    System.out.println("====================================\n" + 
+                    "Anda memilih perulangan for segitiga terbalik : \n" + 
+                    "====================================\n");
+                    System.out.println("while(kondisi) {aksi}\n" + 
+                    "====================================\n" +
+                    "KARAKTERISTIK while :\n" + 
+                    "1. while bisa di gunakan bercabang \n" + 
+                    "2. while bersifat case sensitive artinya java hanya menganggap for dengan huruf kecil \n" + 
+                    "3. jika kondisi tidak memenuhi syarat program akan berhenti");
+
+                    System.out.print("Masukkan tinggi segitiga: ");
+                    tinggi = hasil3.nextInt();
+
+                    int i = tinggi;
+                    while (i >= 1) {
+                        int j = tinggi - i;
+                        while (j > 0) {
+                            System.out.print(" ");
+                            j--;
+                        }
+                        int k = 2 * i - 1;
+                        while (k > 0) {
+                            System.out.print("*");
+                            k--;
+                        }
+                        System.out.println();
+                        i--;
+                    }
+
+                }else if( pilihan2 == 3 ) {
+                    System.out.println("====================================\n" + 
+                    "Anda memilih perulangan do while segitiga sama kaki : \n" + 
+                    "====================================\n");
+                    System.out.println("do{aksi} while(kondisi)\n" + 
+                    "====================================\n" +
+                    "KARAKTERISTIK do while :\n" + 
+                    "1. do while bisa di gunakan bercabang \n" + 
+                    "2. do while bersifat case sensitive artinya java hanya menganggap for dengan huruf kecil \n" + 
+                    "3. jika konndisi tidak memenuhi syarat maka program akan berhenti \n" + 
+                    "4. aksi akan di jalankan terlebih dahulu baru kondisinya di cek");
+
+                    System.out.print("Masukkan tinggi segitiga: ");
+                    tinggi = hasil3.nextInt();
+
+                    int i = tinggi;
+                    do {
+                        int j = tinggi - i;
+                        do {
+                            System.out.print(" ");
+                            j--;
+                        } while (j > 0);
+            
+                        int k = 2 * i - 1;
+                        do {
+                            System.out.print("*");
+                            k--;
+                        } while (k > 0);
+            
+                        System.out.println();
+                        i--;
+                    } while (i >= 1);
+                    
+
+                }else{
+                    System.out.println("Maaf Anda salah memilih program");
+                }
+            } else {
+                System.out.println("Maaf nomor yang Anda pilih salah!");
+                System.out.print("Apakah Anda ingin mengulangi program? (ketik y untuk ya, n untuk tidak) : ");
+                ulang = hasil.next();
+                continue;
+            }     
+
+
+            System.out.print("Apakah Anda ingin mengulangi program? (ketik y untuk ya, n untuk tidak) : ");
+            ulang = hasil.next();
+        } while (ulang.equalsIgnoreCase("y"));
+
+        System.out.println("Terima kasih telah menggunakan program ini!");
+        hasil.close();
+    }
+}
+
+    </textarea>
+
+	<h3>ouput<br>klik gambar untuk full screen</h3>
+
+	<ul class="gallery">
+		<li>
+			<h4>1.) langkah pertama compile source code java dengan terminak bawaan(CMD, git-bash, power-shell atau yang lainnya). Bisa juga menggunakan IDE netbeans!</h4>
+			<a href="#gambar-1">
+			<img src="img/compile-java.png"alt="compile-java">
+			<span></span>
+			</a>
+			<div class="overlay"id="gambar-1">
+			<a href="#" class="close">x close</a>
+			<img src="img/compile-java.png"alt="compile-java">
+			</div>
+		</li>
+
+		<li>
+		    <h4>2.) langkah kedua run atau jalankan programnya dengan mengetikan sintaks java Main.java untuk menggunakan terminal, untuk IDE netbeans tinggal klik gambar run di bagian headbar <br>
+				untuk menjalankannya ikuti cara berikut ini :</h4>
+		    <a href="#gambar-2">
+		    <img src="img/Run.png"alt="Run">
+		    <span></span>
+		    </a>
+		    <div class="overlay"id="gambar-2">
+		    <a href="#" class="close">x close</a>
+		    <img src="img/Run.png"alt="Run">
+		    </div>
+		</li>
+
+		<li>
+			<h4>3.) Berikut tampilan program ketika di jalankan, pada kasus ini saya memilih 1. segitiga siku siku kemudian menggunakan do while yang menghasilkan looping segitiga siku siku <br>
+			        dan ketika program selesai maka akan diberikan pilihan y untuk ya dan melanjutkan programnya dan n untuk tidak melanjutkan programnya</h4>
+		    <a href="#gambar-3">
+		    <img src="img/Run2.png"alt="Run2">
+		    <span></span>
+		    </a>
+		    <div class="overlay"id="gambar-3">
+		    <a href="#" class="close">x close</a>
+		    <img src="img/Run2.png"alt="Run2">
+		    </div>
+		</li>
+		<li>
+			<h4>4.) berikut ini jika mengulang program di sini saya memilih 3. segitiga terbalik dan menggunakan for sebagai looping perulangan setelah itu saya akan mengetikan n untuk close program <br>
+			        atau mengakhiri program !</h4>
+		    <a href="#gambar-4">
+		    <img src="img/Run3.png"alt="Run3">
+		    <span></span>
+		    </a>
+		    <div class="overlay"id="gambar-4">
+		    <a href="#" class="close">x close</a>
+		    <img src="img/Run3.png"alt="Run3">
+		    </div>
+		</li>
+		<li>
+			<h4>5.) berikut jika program salah di ketikan atau user salah memasukan angka, maka akan menampilkan pesan "Maaf anda salah memilih program" dan di bawahnya akan menampilkan opsi untuk melanjutkan atau tidak</h4>
+		    <a href="#gambar-5">
+		    <img src="img/Run4.png"alt="Run4">
+		    <span></span>
+		    </a>
+		    <div class="overlay"id="gambar-5">
+		    <a href="#" class="close">x close</a>
+		    <img src="img/Run4.png"alt="Run4">
+		    </div>
+		</li>
+
+		<div class="clear"></div>
+	</ul>
+</body>
+</html>
