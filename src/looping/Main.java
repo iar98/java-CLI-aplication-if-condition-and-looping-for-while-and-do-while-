@@ -87,7 +87,7 @@ public class Main {
                         "====================================\n" +
                         "KARAKTERISTIK do while :\n" + 
                         "1. do while bisa di gunakan bercabang \n" + 
-                        "2. do while bersifat case sensitive artinya java hanya menganggap for dengan huruf kecil \n" + 
+                        "2. do while bersifat case sensitive artinya java hanya menganggap dengan huruf kecil \n" + 
                         "3. jika konndisi tidak memenuhi syarat maka program akan berhenti \n" + 
                         "4. aksi akan di jalankan terlebih dahulu baru kondisinya di cek");
 
@@ -134,7 +134,7 @@ public class Main {
                     "====================================\n" + 
                     "KARAKTERISTIK for :\n" + 
                     "1. for bisa di gunakan bercabang \n" + 
-                    "2. for bersifat case sensitive artinya java hanya menganggap for dengan huruf kecil \n" + 
+                    "2. for bersifat case sensitive artinya java hanya menganggap dengan huruf kecil \n" + 
                     "3. jika kondisi tidak memenuhi syarat program akan berhenti");
 
                     System.out.print("Masukkan tinggi segitiga: ");
@@ -156,7 +156,7 @@ public class Main {
                     "====================================\n" +
                     "KARAKTERISTIK while :\n" + 
                     "1. while bisa di gunakan bercabang \n" + 
-                    "2. while bersifat case sensitive artinya java hanya menganggap for dengan huruf kecil \n" + 
+                    "2. while bersifat case sensitive artinya java hanya menganggap dengan huruf kecil \n" + 
                     "3. jika kondisi tidak memenuhi syarat program akan berhenti");
 
                     System.out.print("Masukkan tinggi segitiga: ");
@@ -186,7 +186,7 @@ public class Main {
                     "====================================\n" +
                     "KARAKTERISTIK do while :\n" + 
                     "1. do while bisa di gunakan bercabang \n" + 
-                    "2. do while bersifat case sensitive artinya java hanya menganggap for dengan huruf kecil \n" + 
+                    "2. do while bersifat case sensitive artinya java hanya menganggap dengan huruf kecil \n" + 
                     "3. jika konndisi tidak memenuhi syarat maka program akan berhenti \n" + 
                     "4. aksi akan di jalankan terlebih dahulu baru kondisinya di cek");
 
@@ -240,7 +240,7 @@ public class Main {
                     "====================================\n" + 
                     "KARAKTERISTIK for :\n" + 
                     "1. for bisa di gunakan bercabang \n" + 
-                    "2. for bersifat case sensitive artinya java hanya menganggap for dengan huruf kecil \n" + 
+                    "2. for bersifat case sensitive artinya java hanya menganggap dengan huruf kecil \n" + 
                     "3. jika kondisi tidak memenuhi syarat program akan berhenti");
 
                     System.out.print("Masukkan tinggi segitiga: ");
@@ -263,7 +263,7 @@ public class Main {
                     "====================================\n" +
                     "KARAKTERISTIK while :\n" + 
                     "1. while bisa di gunakan bercabang \n" + 
-                    "2. while bersifat case sensitive artinya java hanya menganggap for dengan huruf kecil \n" + 
+                    "2. while bersifat case sensitive artinya java hanya menganggap dengan huruf kecil \n" + 
                     "3. jika kondisi tidak memenuhi syarat program akan berhenti");
 
                     System.out.print("Masukkan tinggi segitiga: ");
@@ -293,7 +293,7 @@ public class Main {
                     "====================================\n" +
                     "KARAKTERISTIK do while :\n" + 
                     "1. do while bisa di gunakan bercabang \n" + 
-                    "2. do while bersifat case sensitive artinya java hanya menganggap for dengan huruf kecil \n" + 
+                    "2. do while bersifat case sensitive artinya java hanya menganggap dengan huruf kecil \n" + 
                     "3. jika konndisi tidak memenuhi syarat maka program akan berhenti \n" + 
                     "4. aksi akan di jalankan terlebih dahulu baru kondisinya di cek");
 
